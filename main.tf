@@ -25,7 +25,7 @@ resource "aws_s3_bucket" "test_bucket" {
     "PermissionsBoundary" = "JuniorCPE_PermissionsBoundary"
   })
 }
-#nonproddd
+#nonprod
 resource "aws_s3_bucket" "nonprod_bucket" {
   provider = aws.nonprod
   bucket = "nonprod-bucket-yogi-spacelift-provider-nonprod${random_integer.test_bucket.result}"
